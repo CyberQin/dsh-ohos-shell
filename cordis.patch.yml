@@ -1,0 +1,17 @@
+# dsh bundle patch: HarmonyOS / OpenHarmony launch environment.
+#
+# Row 1 installs the harmonybrew environment into the Host process's own
+# environment. Because `scrubbedParentEnv()` reads `process.env` at every spawn,
+# this reaches the Web sidebar terminal, the model-facing `bash` tool, subagents
+# and MCP servers at once — including when the Harness was started from a
+# launcher whose PATH never saw a login shell.
+#
+# Row 2 publishes the same facts through `ctx.shellEnv`, so model shell calls
+# can see where harmonybrew, the interactive shell and a writable TMPDIR are.
+- insert:
+    - id: ohos-shell-env
+      name: './index.js'
+    - id: ohos-shell-facts
+      name: './facts.js'
+      inject:
+        - shellEnv

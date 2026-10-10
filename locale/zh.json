@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "鸿蒙 Shell 与 Brew",
+    "description": "让所有子进程都拿到 harmonybrew 环境，补上鸿蒙 zsh 缺失的函数库，并让侧栏终端默认用 zsh 而不是 mksh。"
+  }
+}

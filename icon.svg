@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="dsh-ohos-shell">
+  <title>dsh-ohos-shell</title>
+  <rect width="512" height="512" rx="112" fill="#0b1220"/>
+  <rect x="72" y="104" width="368" height="264" rx="32" fill="#111c31" stroke="#2b3b5c" stroke-width="8"/>
+  <circle cx="112" cy="144" r="10" fill="#f87171"/>
+  <circle cx="144" cy="144" r="10" fill="#fbbf24"/>
+  <circle cx="176" cy="144" r="10" fill="#34d399"/>
+  <path d="M120 232 L168 272 L120 312" fill="none" stroke="#34d399" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M196 312 H300" fill="none" stroke="#e2e8f0" stroke-width="20" stroke-linecap="round"/>
+  <path d="M256 420 C256 396 276 384 300 384 C324 384 344 396 344 420" fill="none" stroke="#38bdf8" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="300" cy="352" r="18" fill="#38bdf8"/>
+</svg>

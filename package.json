@@ -1,0 +1,70 @@
+{
+  "name": "dsh-ohos-shell",
+  "version": "1.1.0",
+  "description": "HarmonyOS/OpenHarmony only: give every Harness child process the harmonybrew environment, supply the zsh functions the OHOS zsh packaging omits, and default the Web sidebar terminal to zsh instead of mksh.",
+  "type": "module",
+  "license": "MIT",
+  "author": "CyberQin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberQin/dsh-ohos-shell.git"
+  },
+  "homepage": "https://github.com/CyberQin/dsh-ohos-shell#readme",
+  "bugs": {
+    "url": "https://github.com/CyberQin/dsh-ohos-shell/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "harmonyos",
+    "openharmony",
+    "ohos",
+    "harmonybrew",
+    "zsh",
+    "shell"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./facts.js": "./facts.js",
+    "./detect.js": "./detect.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "facts.js",
+    "detect.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "zsh-functions",
+    "icon.svg",
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node selftest.mjs && node selftest_fpath.mjs && node selftest_facts.mjs && node selftest_platform.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@deepseek-ai/dsh-shell-env": "^0.2.0-rc.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

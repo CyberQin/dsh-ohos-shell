@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OHOS Shell & Brew",
+    "description": "Gives every Harness child process the harmonybrew environment, supplies the zsh functions the OHOS packaging omits, and opens the sidebar terminal in zsh instead of mksh."
+  }
+}
