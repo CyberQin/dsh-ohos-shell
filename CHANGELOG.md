@@ -23,9 +23,9 @@ Preparation for the first public release.
 - `package.json` 补齐发布元数据：`repository`、`homepage`、`bugs`、`keywords`、`engines`、`peerDependencies`、`icon`、`publishConfig`，并移除 `private`。
 - 平台限制在运行时执行。`package.json` 不写 `os` 字段，判定完全由 `isOhos()` 完成。
 - `detect.js` 删除硬编码的 harmonybrew 路径，改由 `OHOS_BREW_PREFIX`、`HOMEBREW_PREFIX` 与 `~/.harmonybrew` 探测前缀。
-- 新增根 `LICENSE`（MIT）。`zsh-functions/` 中的两个文件仍适用 zsh 自身许可证，原文随包在 `zsh-functions/LICENCE`。
+- 新增根 `LICENSE`（MIT 原文）与 `THIRD_PARTY_NOTICES.md`。`zsh-functions/` 中的两个文件仍适用 zsh 自身许可证，声明汇总在后者。
 
 - `package.json` gained the publish metadata `repository`, `homepage`, `bugs`, `keywords`, `engines`, `peerDependencies`, `icon`, and `publishConfig`. The `private` field is gone.
 - The platform limit is enforced at runtime. `package.json` carries no `os` field, and `isOhos()` alone decides.
 - `detect.js` dropped its hardcoded harmonybrew path. The prefix now comes from `OHOS_BREW_PREFIX`, `HOMEBREW_PREFIX`, or `~/.harmonybrew`.
-- A root `LICENSE` (MIT) is new. The two files under `zsh-functions/` still fall under zsh's own license, shipped at `zsh-functions/LICENCE`.
+- A root `LICENSE` (plain MIT text) and `THIRD_PARTY_NOTICES.md` are new. The two files under `zsh-functions/` still fall under zsh's own license, and the notices file collects them.

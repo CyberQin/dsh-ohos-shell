@@ -19,10 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-This package also ships two unmodified files from zsh 5.9 under
-zsh-functions/. They are covered by zsh's own license, not by the MIT license
-above. The upstream license text is included at zsh-functions/LICENCE, and
-zsh-functions/README.md records their provenance.

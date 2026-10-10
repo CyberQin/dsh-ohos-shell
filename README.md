@@ -299,6 +299,7 @@ The `ohos-shell-env` row restores every key that it changed. After the removal, 
 | `selftest*.mjs` | 离线自测。 |
 | `icon.svg` | 插件管理器与市场卡片显示的图标。 |
 | `LICENSE` | 本包的 MIT 许可证原文。见第 10 节。 |
+| `THIRD_PARTY_NOTICES.md` | 随附的第三方文件声明。见第 10 节。 |
 | `CHANGELOG.md` | 版本变更记录。 |
 
 | File | Role |
@@ -311,6 +312,7 @@ The `ohos-shell-env` row restores every key that it changed. After the removal, 
 | `selftest*.mjs` | Offline self-tests. |
 | `icon.svg` | The icon the plugin manager and the market card show. |
 | `LICENSE` | The MIT license text of this package. See section 10. |
+| `THIRD_PARTY_NOTICES.md` | The notices for the vendored third-party files. See section 10. |
 | `CHANGELOG.md` | The version history. |
 
 ## 10 许可与出处 / License and provenance
@@ -319,9 +321,9 @@ The `ohos-shell-env` row restores every key that it changed. After the removal, 
 
 This package is released under the MIT license. The license text is the `LICENSE` file in this package's root directory.
 
-`zsh-functions/` 中的两个文件来自 zsh 5.9，未作修改。它们没有 `Copyright` 头，适用 zsh 的默认许可证，而不是覆盖部分 shell 函数的 GPL。上游许可证原文随附在 `zsh-functions/LICENCE`。
+`zsh-functions/` 中的两个文件来自 zsh 5.9，未作修改。它们没有 `Copyright` 头，适用 zsh 的默认许可证，而不是覆盖部分 shell 函数的 GPL。上游许可证原文随附在 `zsh-functions/LICENCE`，汇总见根目录的 `THIRD_PARTY_NOTICES.md`。
 
-The two files in `zsh-functions/` come from zsh 5.9 and are unmodified. They have no `Copyright` header. The zsh default license applies, not the GPL that covers some shell functions. The upstream license text is included at `zsh-functions/LICENCE`.
+The two files in `zsh-functions/` come from zsh 5.9 and are unmodified. They have no `Copyright` header. The zsh default license applies, not the GPL that covers some shell functions. The upstream license text is included at `zsh-functions/LICENCE`, and the root `THIRD_PARTY_NOTICES.md` collects the notices.
 
 出处记录：仓库 `https://github.com/zsh-users/zsh`，标签 `zsh-5.9`，上游路径 `Functions/Misc/add-zsh-hook` 与 `Functions/Misc/add-zle-hook-widget`。
 
